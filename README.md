@@ -1,2 +1,4 @@
-# bioSite
-This repo will be used for the bioSite project in the CSD-340 class
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* John Woods
+* Christopher Reaney
