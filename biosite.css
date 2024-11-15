@@ -1,7 +1,13 @@
-h1{
-    text-align: center;
+.header-navbar{
+    border-top: 32px solid #F2DC5D;
+    width: 100%;
     color: #A4031F;
     background-color: #F2DC5D;
+}
+
+#title-text{
+    text-align: center;
+    width: 100%;
 }
 
 h4{
@@ -11,7 +17,10 @@ h4{
 #navbar{
     overflow: hidden;
     background-color: #DB9065;
-    border-bottom: 15px solid #DB9065;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 button{
@@ -21,13 +30,40 @@ button{
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    display: inline-block;
 }
 
 #navbar button:hover{
     color: #F2DC5D;
     background-color: #240B36;
+}
+
+footer{
+    background-color: #240B36;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    color: #FFF;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 img{
@@ -67,6 +103,11 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 50px;
     align-items: center;
+}
+
+#card-1-text,
+#card-3-text{
+    padding-left: 20px;
 }
 
 #about-card-1{
