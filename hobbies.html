@@ -8,6 +8,20 @@
     <meta name="author" content="Christopher Reaney" />
     <meta name="keywords" content="school, assignment" />
     <link href="biosite.css" type="text/css" rel="stylesheet" />
+
+    <script>
+        function displayImage(imageFile){
+          var largerImage = document.getElementById("mainImage");
+          var newNode = document.createElement("img");
+          newNode.id = "mainImage";
+          newNode.src = imageFile;
+          newNode.alt = "Large Image";
+          newNode.className = "mainImage";
+          newNode.style.width = "300px";
+          newNode.style.height = "200px";
+          largerImage.parentNode.replaceChild(newNode, largerImage);
+        }
+    </script>
 </head>
 
 <body>
@@ -25,9 +39,14 @@
 
     <div id="hobbies-container">
         <div id="hobbies-slideshow-card">
-            <div class="card-content">
-                <img src="images/child-truck.png" alt="A young Jacob alongside a large monster truck">
-                <h4>There will be two photos in this area that act as a slideshow.</h4>
+            <div id="slideshow-content">
+                <a href=#
+                    onmouseover="cave.src='images/car-with-hood.png';"
+                    onmouseout= "cave.src='images/child-truck.png';"
+                >
+                    <img border = 0 name = "cave" src = "images/child-truck.png">
+                </a>
+                <h4>Jake has been a fan of motorsports since he was a young boy. Mouse over the image for an additional photo Jake took at a rally he participated in.</h4>
             </div>
         </div>
         <div id="hobbies-card-2">
